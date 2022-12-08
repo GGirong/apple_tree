@@ -1,38 +1,190 @@
-.App {
+
+body {
+  background: #f4f5f6;
+  padding-bottom: 40px;
+}
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  margin: 34px auto;
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.content-container {
+  background: #fff;
+  padding: 20px 120px;
+  border-radius: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-title {
+  font-size: 20px;
+  color: #7B61FF;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content-subtitle {
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.ev-container {
+  border-top: 1px solid #E5DFFF;
+  padding: 10px 30px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.ev-title {
+  font-weight: 800;
+  color: #7B61FF;
+}
+
+.ev-content {
+  color: #555;
+}
+
+.tree-container {
+  width: 550px;
+  height: 550px;
+  background-image: url('./trees.png');
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+
+.apple {
+  width: 50.7px;
+  height: 42.6px;
+  background-size: cover;
+  position: absolute;
+}
+
+.apple.red {
+  background-image: url('./red.png');
+}
+
+.apple.half {
+  background-image: url(./half.png);
+}
+
+.apple.green {
+  background-image: url(./green.png);
+}
+
+.apple.one {
+  top: 94px;
+  left: 208px;
+  animation: bounce-in 0.8s ease 1;
+}
+
+.apple.two {
+  top: 271px;
+  left: 163px;
+  animation: bounce-in 1.2s ease 1;
+}
+
+.apple.three {
+  top: 177px;
+  left: 392px;
+  animation: bounce-in 1.6s ease 1;
+}
+
+.apple.four {
+  top: 190px;
+  left: 210px;
+  animation: bounce-in 2.0s ease 1;
+}
+
+.apple.five {
+  top: 253px;
+  left: 366px;
+  animation: bounce-in 2.4s ease 1;
+}
+
+.apple.six {
+  top: 151px;
+  left: 294px;
+  animation: bounce-in 2.8s ease 1;
+}
+
+.apple.seven {
+  top: 210px;
+  left: 95px;
+  animation: bounce-in-delay 2.8s ease 1;
+}
+
+.apple.eight {
+  top: 81px;
+  left: 331px;
+  animation: bounce-in-delay 3.2s ease 1;
+}
+
+.apple.nine {
+  top: 264px;
+  left: 273px;
+  animation: bounce-in-delay 3.6s ease 1;
+}
+
+.apple.ten {
+  top: 139px;
+  left: 137px;
+  animation: bounce-in-delay 4.0s ease 1;
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  90% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bounce-in-delay {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  80% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  95% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
